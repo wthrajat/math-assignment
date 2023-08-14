@@ -10,11 +10,10 @@ def new_function(x, n):
 def calculate_approximate_error(approximation, true_value):
     return abs(approximation - true_value) / true_value * 100
 
-x = math.sqrt(3)
 desired_error = 0.005 / 100  # Converting percentage to decimal
 
 # Calculate true value using a larger number of terms (adjust as needed)
-true_value = new_function(x, 10)
+true_value = new_function(math.sqrt(3), 10)
 
 n = 1
 approximation = new_function(x, n)
@@ -29,3 +28,4 @@ print("Number of terms required:", n)
 print("Approximate value of New(x):", approximation)
 print("True value of New(x):", true_value)
 print("Approximate error estimate:", error_estimate, "%")
+print("infinity", math.inf)
